@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Disappearing Alert</title>
+  <style>
+    .alert {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px;
+      background-color: #456075;
+      color: white;
+      border-radius: 5px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showAlert()" style="color: #0fab8f;">Submit</button>
+  <div class="alert" id="myAlert">
+    This message has been sent.
+  </div>
+  <script>
+    function showAlert() {
+      var alertBox = document.getElementById("myAlert");
+      alertBox.style.display = "block";
+      setTimeout(function(){
+        alertBox.style.display = "none";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>
